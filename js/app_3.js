@@ -36,6 +36,6 @@ featureLayer.on('ready', function() {
 
 featureLayer.on('ready', function(){
   this.eachLayer(function(layer){
-    layer.bindPopup(layer.feature.properties.name);
+    layer.bindPopup('Trail Name is:' layer.feature.properties.name);
   });
 });
